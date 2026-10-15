@@ -1,0 +1,122 @@
+[
+    {
+        "resource_id": "maharatech_1076",
+        "provider": "Mahara-Tech",
+        "course_title": "Knowledge Representation & AI History",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=1076",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_1089",
+        "provider": "Mahara-Tech",
+        "course_title": "Linux Administration",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=1089",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_955",
+        "provider": "Mahara-Tech",
+        "course_title": "Introduction to Python Programming",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=955",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_970",
+        "provider": "Mahara-Tech",
+        "course_title": "Algorithmic Workshop in Python",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=970",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_956",
+        "provider": "Mahara-Tech",
+        "course_title": "Data Exploration and Preparation",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=956",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_1168",
+        "provider": "Mahara-Tech",
+        "course_title": "Linear Algebra For Data Science",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=1168",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_960",
+        "provider": "Mahara-Tech",
+        "course_title": "Probability and Statistics for Machine Learning",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=960",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_962",
+        "provider": "Mahara-Tech",
+        "course_title": "Numerical Algorithms for Machine Learning",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=962",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_961",
+        "provider": "Mahara-Tech",
+        "course_title": "Numerical Optimization for Data Science",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=961",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    },
+    {
+        "resource_id": "maharatech_1169",
+        "provider": "Mahara-Tech",
+        "course_title": "Programming Challenge",
+        "source_url": "https://maharatech.gov.eg/course/view.php?id=1169",
+        "catalog_url": "https://maharatech.gov.eg/course/index.php?categoryid=196&lang=en",
+        "topics": [],
+        "credential_names": [],
+        "collected_at": "2026-10-15",
+        "last_seen": "2026-10-15",
+        "review_status": "catalog_only"
+    }
+]

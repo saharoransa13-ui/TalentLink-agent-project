@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Data Analyst",
+        "description": "We are looking for a Data Analyst with experience in Python, SQL, and Power BI.",
+        "required_skills": [
+            "Python",
+            "SQL",
+            "Power BI"
+        ],
+        "source": "Example description for learning"
+    },
+    {
+        "title": "Backend Developer",
+        "description": "We are seeking a motivated Junior Backend Developer to join our medical PACS team and grow their skills in Python, FastAPI, and healthcare software development. This role offers hands-on experience with cutting-edge medical imaging technology under senior developer mentorship.\n\nKey Responsibilities\n\nFastAPI Development (Under Guidance)\n\n- **API Implementation**: Build REST API endpoints following established patterns\n- **Pydantic Models**: Create and maintain data validation schemas\n- **Database Operations**: Implement basic CRUD operations with SQLAlchemy\n- **Testing**: Write unit tests and integration tests for API endpoints\n\nDICOM Learning & Support\n\n- **DICOM Basics**: Learn medical imaging standards and DICOM protocol\n- **pydicom Usage**: Handle basic DICOM file operations and metadata extraction\n- **Data Processing**: Support image processing tasks and file conversions\n- **Integration Support**: Assist with DCM4CHEE and Orthanc integrations\n\nDatabase Operations\n\n- **SQL Queries**: Write and optimize database queries for medical data\n- **Model Maintenance**: Update and extend SQLAlchemy models\n- **Data Migration**: Support database migration scripts and data validation\n- **Performance Monitoring**: Monitor query performance and suggest improvements\n\nCode Quality & Learning\n\n- **Code Reviews**: Participate in code review process and implement feedback\n- **Documentation**: Write clear documentation for APIs and code\n- **Best Practices**: Learn and apply Python and FastAPI best practices\n- **Debugging**: Troubleshoot issues in development and testing environments\n\nSupport & Maintenance\n\n- **Bug Fixes**: Resolve minor bugs and issues in existing codebase\n- **Feature Enhancement**: Add small features and improvements\n- **Monitoring**: Help monitor application performance and logs\n- **Testing Support**: Assist QA team with testing scenarios\n\nTechnical Requirements\n\nRequired Skills\n\n- **1-3 years** Python development experience\n- **Basic** web API development knowledge\n- **Fundamental** database concepts (SQL)\n- **Git** version control basics\n- **Problem-solving** abilities and attention to detail\n- **Eagerness to learn** medical software development\n\nPreferred Skills\n\n- **FastAPI** or similar web framework exposure\n- **SQLAlchemy** or any ORM experience\n- **REST API** concepts and HTTP protocols\n- **Redis** or caching concepts\n- **JSON** data handling and validation\n- **Unit testing** with pytest or similar\n- **Docker** basics\n\nNice to Have\n\n- **Healthcare** or medical software interest\n- **DICOM** or medical imaging awareness\n- **Linux/Unix** command line experience\n- **Async programming** basics",
+        "required_skills": [
+            "Python",
+            "SQL",
+            "FastAPI",
+            "Git"
+        ],
+        "source": "Craft Crew - LinkedIn job advertisement",
+        "source_url": "https://eg.linkedin.com/jobs/view/junior-backend-developer-python-fastapi-pacs-at-craft-crew-4303452407",
+        "collected_at": "2026-10-15"
+    }
+]
