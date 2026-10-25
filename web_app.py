@@ -4,10 +4,13 @@ from pathlib import Path
 from html import escape
 
 from fastapi import FastAPI, File, Form, UploadFile
+from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import HTMLResponse
 
 from Read_cv import extract_cv_text
-from skill_matcher import extract_skills, analyze_skill_gap
+from cv_llm import read_cv_with_llm
+from cv_schema import CVProfile
+from skill_matcher import analyze_skill_gap
 
 
 # ==================================================
@@ -23,6 +26,18 @@ with JOBS_FILE.open("r", encoding="utf-8") as file:
     jobs = json.load(file)
 
 app = FastAPI(title="TalentLink")
+
+
+def all_skills(profile: CVProfile) -> list[str]:
+    """Every skill the AI found in the CV, from the four places it can be."""
+    names = [skill.name for skill in profile.skills]
+    for job in profile.experience:
+        names.extend(job.skills_used)
+    for project in profile.projects:
+        names.extend(project.skills_used)
+    for certification in profile.certifications:
+        names.extend(certification.skills_mentioned)
+    return names
 
 
 # ==================================================
@@ -998,10 +1013,10 @@ async def home():
             </div>
 
             <div class="privacy-note"
-                 data-ar="الخصوصية أولًا: لا ترسل سيرتك الذاتية إلى أي نموذج ذكاء اصطناعي قبل إضافة خطوة تنقيح البيانات الشخصية."
-                 data-en="Privacy first: your CV will not be sent to an AI model before a personal-data redaction step is implemented.">
-                الخصوصية أولًا: لا ترسل سيرتك الذاتية إلى أي نموذج
-                ذكاء اصطناعي قبل إضافة خطوة تنقيح البيانات الشخصية.
+                 data-ar="الخصوصية أولًا: نحذف الاسم والبريد والهاتف والروابط من نص سيرتك قبل إرساله إلى نموذج الذكاء الاصطناعي."
+                 data-en="Privacy first: we remove your name, e-mail, phone and links from your CV text before it is sent to the AI model.">
+                الخصوصية أولًا: نحذف الاسم والبريد والهاتف والروابط من
+                نص سيرتك قبل إرساله إلى نموذج الذكاء الاصطناعي.
             </div>
 
         </aside>
@@ -1105,9 +1120,27 @@ async def analyze(
     selected_job = jobs[job_index]
     required_skills = selected_job.get("required_skills", [])
 
-    # البحث عن الكلمات المفتاحية المطلوبة داخل نص السيرة الذاتية.
-    candidate_skills = extract_skills(cv_text, required_skills)
+    # الذكاء الاصطناعي يقرأ السيرة (بعد حذف البيانات الشخصية) ويرجع CVProfile.
+    # run_in_threadpool: نداء Groq يأخذ ثواني، فيعمل في thread منفصل حتى لا يوقف الموقع.
+    try:
+        profile = await run_in_threadpool(read_cv_with_llm, cv_text)
+    except Exception as error:
+        print("CV reading with the AI failed:", repr(error))   # details for you, in the terminal
+        return HTMLResponse(
+            page("""
+                <div class="error">
+                    <h2>تعذر تحليل السيرة الذاتية الآن.</h2>
+                    <p>
+                        حدثت مشكلة أثناء الاتصال بخدمة الذكاء الاصطناعي. حاول مرة أخرى بعد قليل.
+                    </p>
+                    <a class="back-link" href="/">العودة</a>
+                </div>
+            """),
+            status_code=502,
+        )
 
+    candidate_skills = all_skills(profile)
+    
     # ملاحظة: هذه الواجهة تفترض أن الدالة تعيد قاموسًا
     # يحتوي على matched_skills وmissing_skills وmatch_rate.
     report = analyze_skill_gap(candidate_skills, required_skills)
@@ -1142,9 +1175,9 @@ async def analyze(
 
         <div class="result-box">
             <h2
-                data-ar="نسبة تطابق الكلمات المفتاحية"
-                data-en="Keyword Match Rate">
-                نسبة تطابق الكلمات المفتاحية
+                data-ar="نسبة تطابق المهارات"
+                data-en="Skill Match Rate">
+                نسبة تطابق المهارات
             </h2>
             <h2>{report["match_rate"]:.1f}%</h2>
         </div>
@@ -1164,11 +1197,11 @@ async def analyze(
         <ul class="skills-list">{missing_html}</ul>
 
         <p class="muted"
-           data-ar="هذه نتيجة أولية تعتمد على الكلمات المفتاحية، ولا تثبت مستوى إتقان المهارات. كما أن عدم العثور على كلمة لا يعني بالضرورة أن المرشح لا يمتلك المهارة."
-           data-en="This preliminary result uses keyword matching and does not establish proficiency. A missing keyword does not necessarily mean the candidate lacks that skill.">
-            هذه نتيجة أولية تعتمد على الكلمات المفتاحية، ولا تثبت
-            مستوى إتقان المهارات. كما أن عدم العثور على كلمة لا يعني
-            بالضرورة أن المرشح لا يمتلك المهارة.
+           data-ar="هذه نتيجة أولية: الذكاء الاصطناعي يستخرج المهارات المكتوبة في السيرة، ثم تُقارن بأسماء مهارات الوظيفة. لا تثبت مستوى الإتقان، وقد لا تتطابق مهارة مكتوبة باسم مختلف."
+           data-en="This is a preliminary result: the AI extracts the skills written in the CV, then they are compared with the job's skill names. It does not establish proficiency, and a skill written under a different name may not match.">
+            هذه نتيجة أولية: الذكاء الاصطناعي يستخرج المهارات المكتوبة
+            في السيرة، ثم تُقارن بأسماء مهارات الوظيفة. لا تثبت مستوى
+            الإتقان، وقد لا تتطابق مهارة مكتوبة باسم مختلف.
         </p>
 
         <a class="back-link" href="/"
