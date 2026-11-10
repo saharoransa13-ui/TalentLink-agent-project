@@ -1,0 +1,304 @@
+[
+  {
+    "item_id": "course_python",
+    "title": "Python for Everybody",
+    "item_type": "course",
+    "provider": "Coursera",
+    "url": "https://www.coursera.org/specializations/python",
+    "skill_ids": [
+      "python"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_ml",
+    "title": "Machine Learning Specialization",
+    "item_type": "course",
+    "provider": "Coursera",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "skill_ids": [
+      "machine_learning",
+      "statistics"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_genai",
+    "title": "Generative AI Learning Path",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/training/",
+    "skill_ids": [
+      "generative_ai"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_network",
+    "title": "Networking Basics",
+    "item_type": "course",
+    "provider": "Cisco Networking Academy",
+    "url": "https://www.netacad.com/",
+    "skill_ids": [
+      "networking"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_linux",
+    "title": "Introduction to Linux",
+    "item_type": "course",
+    "provider": "edX",
+    "url": "https://www.edx.org/learn/linux",
+    "skill_ids": [
+      "linux"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_cloud",
+    "title": "Azure Fundamentals learning paths",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/training/azure/",
+    "skill_ids": [
+      "cloud"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_sql",
+    "title": "SQL for Data Science",
+    "item_type": "course",
+    "provider": "Coursera",
+    "url": "https://www.coursera.org/learn/sql-for-data-science",
+    "skill_ids": [
+      "sql",
+      "databases"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_security",
+    "title": "Cybersecurity learning paths",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/training/browse/?terms=security",
+    "skill_ids": [
+      "cybersecurity"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_devops",
+    "title": "DevOps learning paths",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/training/browse/?terms=devops",
+    "skill_ids": [
+      "devops"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_data",
+    "title": "Data Analysis with Python",
+    "item_type": "course",
+    "provider": "Coursera",
+    "url": "https://www.coursera.org/learn/data-analysis-with-python",
+    "skill_ids": [
+      "data_analysis",
+      "python"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_stats",
+    "title": "Statistics and Probability",
+    "item_type": "course",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability",
+    "skill_ids": [
+      "statistics"
+    ],
+    "level": "beginner",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_data_eng",
+    "title": "Data Engineering resources",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/training/browse/?terms=data%20engineering",
+    "skill_ids": [
+      "data_engineering"
+    ],
+    "level": "intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_backend",
+    "title": "Build web APIs with FastAPI",
+    "item_type": "course",
+    "provider": "FastAPI Documentation",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "skill_ids": [
+      "backend_development",
+      "python"
+    ],
+    "level": "intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "project_network",
+    "title": "Build a segmented home lab network",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://skillsforall.com/",
+    "skill_ids": [
+      "networking",
+      "cybersecurity"
+    ],
+    "level": "intermediate",
+    "duration": "1–2 weeks"
+  },
+  {
+    "item_id": "project_devops",
+    "title": "Deploy a containerized service with CI/CD",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://docs.docker.com/get-started/",
+    "skill_ids": [
+      "devops",
+      "cloud",
+      "python"
+    ],
+    "level": "intermediate",
+    "duration": "1–2 weeks"
+  },
+  {
+    "item_id": "project_ai",
+    "title": "Build a small RAG assistant with evaluation",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://huggingface.co/learn",
+    "skill_ids": [
+      "generative_ai",
+      "python",
+      "machine_learning"
+    ],
+    "level": "intermediate",
+    "duration": "2 weeks"
+  },
+  {
+    "item_id": "project_data",
+    "title": "Create a SQL analytics dashboard",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://learn.microsoft.com/power-bi/",
+    "skill_ids": [
+      "sql",
+      "data_analysis",
+      "databases"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "1 week"
+  },
+  {
+    "item_id": "cert_security",
+    "title": "Security certification exploration",
+    "item_type": "certification",
+    "provider": "ISC2",
+    "url": "https://www.isc2.org/certifications",
+    "skill_ids": [
+      "cybersecurity"
+    ],
+    "level": "intermediate",
+    "duration": "Varies"
+  },
+  {
+    "item_id": "cert_cloud",
+    "title": "Cloud certification paths",
+    "item_type": "certification",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/credentials/",
+    "skill_ids": [
+      "cloud",
+      "devops"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Varies"
+  },
+  {
+    "item_id": "workshop_data",
+    "title": "Hands-on data skills workshop resources",
+    "item_type": "workshop",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn",
+    "skill_ids": [
+      "data_analysis",
+      "machine_learning",
+      "data_engineering"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "course_windows_server",
+    "title": "Windows Server learning resources",
+    "item_type": "course",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/browse/?products=windows-server",
+    "skill_ids": [
+      "windows_server"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced"
+  },
+  {
+    "item_id": "project_windows_server_lab",
+    "title": "Build a Windows Server and Active Directory lab",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://learn.microsoft.com/en-us/windows-server/",
+    "skill_ids": [
+      "windows_server"
+    ],
+    "level": "intermediate",
+    "duration": "1–2 weeks"
+  },
+  {
+    "item_id": "course_backup_recovery",
+    "title": "Backup and recovery learning resources",
+    "item_type": "course",
+    "provider": "Veeam",
+    "url": "https://www.veeam.com/technical-education.html",
+    "skill_ids": [
+      "backup"
+    ],
+    "level": "beginner/intermediate",
+    "duration": "Self-paced; provider options may vary"
+  },
+  {
+    "item_id": "project_backup_recovery",
+    "title": "Design and test a backup-and-restore lab",
+    "item_type": "project",
+    "provider": "Project idea",
+    "url": "https://helpcenter.veeam.com/",
+    "skill_ids": [
+      "backup"
+    ],
+    "level": "intermediate",
+    "duration": "1 week"
+  }
+]

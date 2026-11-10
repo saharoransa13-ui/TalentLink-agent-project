@@ -1,0 +1,28 @@
+# ===== LLM (OpenAI-compatible) =====
+# 1) حطي المفتاح بتاعك بعد علامة = بدون مسافات أو علامات تنصيص
+OPENAI_API_KEY=PUT_YOUR_KEY_HERE
+
+# 2) اختاري المزود حسب نوع المفتاح (سيبي سطر واحد بس من غير # قدامه):
+# --- OpenAI (المفتاح بيبدأ بـ sk-) ---
+OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI_MODEL=gpt-4o-mini
+# --- Groq (المفتاح بيبدأ بـ gsk_) ---
+# OPENAI_BASE_URL=https://api.groq.com/openai/v1
+# OPENAI_MODEL=llama-3.3-70b-versatile
+# --- Google Gemini (المفتاح بيبدأ بـ AIza) ---
+# OPENAI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
+# OPENAI_MODEL=gemini-2.0-flash
+# --- OpenRouter (المفتاح بيبدأ بـ sk-or-) ---
+# OPENAI_BASE_URL=https://openrouter.ai/api/v1
+# OPENAI_MODEL=openai/gpt-4o-mini
+
+LLM_TIMEOUT_SECONDS=35
+
+# ===== Optional =====
+ENABLE_EMBEDDING_MATCHING=false
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+EMBEDDING_PARTIAL_THRESHOLD=0.58
+ADZUNA_APP_ID=
+ADZUNA_APP_KEY=
+ADZUNA_COUNTRY=gb
+SERPAPI_API_KEY=

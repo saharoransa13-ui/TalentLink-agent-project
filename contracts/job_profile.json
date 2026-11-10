@@ -1,0 +1,17 @@
+{
+  "role_id": "network_engineer",
+  "title": "Network Engineer",
+  "description": "Example role profile",
+  "skills": [
+    {
+      "skill_id": "networking",
+      "name": "Networking & Routing",
+      "weight": 1.0,
+      "aliases": [
+        "tcp/ip",
+        "routing"
+      ],
+      "prerequisite": true
+    }
+  ]
+}

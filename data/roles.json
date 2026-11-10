@@ -1,0 +1,459 @@
+[
+  {
+    "role_id": "network_engineer",
+    "title": "Network Engineer",
+    "description": "Enterprise networking, routing, switching, and security fundamentals.",
+    
+"skills": [
+  {
+    "skill_id": "networking",
+    "name": "Networking & Routing",
+    "weight": 1.0,
+    "aliases": [
+      "tcp/ip", "routing", "switching", "vlan",
+      "ospf", "bgp", "subnetting", "lan", "wan",
+      "network troubleshooting"
+    ],
+    "prerequisite": true
+  },
+  {
+    "skill_id": "cybersecurity",
+    "name": "Network Security",
+    "weight": 0.75,
+    "aliases": [
+      "firewall", "siem", "ids/ips", "vpn",
+      "access control lists", "network security",
+      "network segmentation", "security hardening"
+    ],
+    "prerequisite": false
+  },
+  {
+    "skill_id": "linux",
+    "name": "Linux Administration",
+    "weight": 0.45,
+    "aliases": [
+      "linux", "bash", "red hat", "rhel",
+      "ubuntu", "shell scripting", "linux system administration"
+    ],
+    "prerequisite": false
+  },
+  {
+    "skill_id": "cloud",
+    "name": "Cloud Networking",
+    "weight": 0.50,
+    "aliases": [
+      "cloud networking", "azure virtual network",
+      "aws vpc", "cloud routing", "cloud network security",
+      "site-to-site vpn", "cloud connectivity"
+    ],
+    "prerequisite": false
+  },
+  {
+    "skill_id": "devops",
+    "name": "Automation & DevOps",
+    "weight": 0.40,
+    "aliases": [
+      "ansible", "terraform", "python network automation",
+      "network automation", "ci/cd", "jenkins",
+      "configuration management"
+    ],
+    "prerequisite": false
+  },
+  {
+    "skill_id": "virtualization",
+    "name": "Virtualization",
+    "weight": 0.35,
+    "aliases": [
+      "vmware", "hyper-v", "esxi", "vsphere",
+      "vcenter", "virtual machine networking",
+      "virtual network configuration"
+    ],
+    "prerequisite": false
+      }
+    ]
+  },
+  {
+    "role_id": "sysadmin",
+    "title": "Systems Administrator",
+    "description": "Windows/Linux systems, virtualization, backup, and operations.",
+    "skills": [
+      {
+        "skill_id": "windows_server",
+        "name": "Windows Server",
+        "weight": 0.9,
+        "aliases": [
+          "active directory"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "linux",
+        "name": "Linux Administration",
+        "weight": 0.8,
+        "aliases": [
+          "linux",
+          "bash"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "virtualization",
+        "name": "Virtualization",
+        "weight": 0.8,
+        "aliases": [
+          "vmware",
+          "nutanix"
+        ]
+      },
+      {
+        "skill_id": "backup",
+        "name": "Backup & Recovery",
+        "weight": 0.7,
+        "aliases": [
+          "veeam",
+          "commvault"
+        ]
+      },
+      {
+        "skill_id": "networking",
+        "name": "Networking",
+        "weight": 0.55,
+        "aliases": [
+          "tcp/ip"
+        ]
+      },
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Fundamentals",
+        "weight": 0.4,
+        "aliases": [
+          "azure",
+          "aws"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "dba",
+    "title": "Database Administrator",
+    "description": "Database administration, SQL, performance, and operations.",
+    "skills": [
+      {
+        "skill_id": "databases",
+        "name": "Database Administration",
+        "weight": 1.0,
+        "aliases": [
+          "dba",
+          "oracle"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "sql",
+        "name": "SQL",
+        "weight": 0.95,
+        "aliases": [
+          "sql",
+          "postgresql"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "linux",
+        "name": "Linux Administration",
+        "weight": 0.4,
+        "aliases": [
+          "linux"
+        ]
+      },
+      {
+        "skill_id": "backup",
+        "name": "Backup & Recovery",
+        "weight": 0.45,
+        "aliases": [
+          "backup"
+        ]
+      },
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Databases",
+        "weight": 0.35,
+        "aliases": [
+          "aws",
+          "azure"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "ai_ml",
+    "title": "AI / ML Engineer",
+    "description": "Python, machine learning, generative AI, and data fundamentals.",
+    "skills": [
+      {
+        "skill_id": "python",
+        "name": "Python",
+        "weight": 1.0,
+        "aliases": [
+          "python"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "machine_learning",
+        "name": "Machine Learning",
+        "weight": 0.95,
+        "aliases": [
+          "pytorch",
+          "scikit-learn"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "generative_ai",
+        "name": "Generative AI & LLMs",
+        "weight": 0.8,
+        "aliases": [
+          "rag",
+          "llm"
+        ]
+      },
+      {
+        "skill_id": "statistics",
+        "name": "Statistics",
+        "weight": 0.65,
+        "aliases": [
+          "statistics"
+        ]
+      },
+      {
+        "skill_id": "data_engineering",
+        "name": "Data Engineering",
+        "weight": 0.45,
+        "aliases": [
+          "etl",
+          "airflow"
+        ]
+      },
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Platforms",
+        "weight": 0.35,
+        "aliases": [
+          "aws",
+          "azure"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "cybersecurity",
+    "title": "Cybersecurity Analyst",
+    "description": "Security operations, vulnerability management, and networking.",
+    "skills": [
+      {
+        "skill_id": "cybersecurity",
+        "name": "Security Operations",
+        "weight": 1.0,
+        "aliases": [
+          "siem",
+          "soc"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "networking",
+        "name": "Networking",
+        "weight": 0.7,
+        "aliases": [
+          "tcp/ip"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "linux",
+        "name": "Linux",
+        "weight": 0.45,
+        "aliases": [
+          "linux"
+        ]
+      },
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Security",
+        "weight": 0.5,
+        "aliases": [
+          "aws",
+          "azure"
+        ]
+      },
+      {
+        "skill_id": "python",
+        "name": "Scripting with Python",
+        "weight": 0.4,
+        "aliases": [
+          "python"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "devops_cloud",
+    "title": "DevOps / Cloud Engineer",
+    "description": "Cloud, CI/CD, containers, infrastructure automation.",
+    "skills": [
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Platforms",
+        "weight": 1.0,
+        "aliases": [
+          "aws",
+          "azure"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "devops",
+        "name": "CI/CD & Automation",
+        "weight": 0.95,
+        "aliases": [
+          "docker",
+          "kubernetes"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "linux",
+        "name": "Linux",
+        "weight": 0.7,
+        "aliases": [
+          "linux"
+        ]
+      },
+      {
+        "skill_id": "python",
+        "name": "Python Scripting",
+        "weight": 0.45,
+        "aliases": [
+          "python"
+        ]
+      },
+      {
+        "skill_id": "networking",
+        "name": "Networking",
+        "weight": 0.4,
+        "aliases": [
+          "tcp/ip"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "data_analyst",
+    "title": "Data Analyst",
+    "description": "SQL, statistics, data analysis, and visualization.",
+    "skills": [
+      {
+        "skill_id": "sql",
+        "name": "SQL",
+        "weight": 0.95,
+        "aliases": [
+          "sql"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "data_analysis",
+        "name": "Data Analysis & Visualization",
+        "weight": 1.0,
+        "aliases": [
+          "pandas",
+          "power bi"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "statistics",
+        "name": "Statistics",
+        "weight": 0.75,
+        "aliases": [
+          "statistics"
+        ]
+      },
+      {
+        "skill_id": "python",
+        "name": "Python",
+        "weight": 0.55,
+        "aliases": [
+          "python"
+        ]
+      },
+      {
+        "skill_id": "data_engineering",
+        "name": "Data Pipelines",
+        "weight": 0.35,
+        "aliases": [
+          "etl"
+        ]
+      }
+    ]
+  },
+  {
+    "role_id": "backend_developer",
+    "title": "Backend Developer",
+    "description": "Backend programming, APIs, databases, and deployment.",
+    "skills": [
+      {
+        "skill_id": "python",
+        "name": "Programming with Python",
+        "weight": 0.8,
+        "aliases": [
+          "python"
+        ],
+        "prerequisite": true
+      },
+      {
+        "skill_id": "backend_development",
+        "name": "Backend & REST APIs",
+        "weight": 1.0,
+        "aliases": [
+          "rest api",
+          "rest apis",
+          "restful",
+          "web api",
+          "fastapi",
+          "django",
+          "flask",
+          "express.js",
+          "spring boot"
+        ]
+      },
+      {
+        "skill_id": "sql",
+        "name": "Databases & SQL",
+        "weight": 0.75,
+        "aliases": [
+          "sql"
+        ]
+      },
+      {
+        "skill_id": "devops",
+        "name": "Deployment & Containers",
+        "weight": 0.45,
+        "aliases": [
+          "docker",
+          "ci/cd"
+        ]
+      },
+      {
+        "skill_id": "cloud",
+        "name": "Cloud Deployment",
+        "weight": 0.35,
+        "aliases": [
+          "aws",
+          "azure"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Gap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#" class="logo">🧭 CV Gap</a>
+    <nav class="nav">
+      <a href="#how" data-i18n="nav_how">كيف يعمل</a>
+      <a href="#analyze" data-i18n="nav_analyze">حلّل سيرتك</a>
+      <a href="#assistant" data-i18n="nav_assistant">المساعد</a>
+    </nav>
+    <button id="lang-toggle" class="lang-toggle" type="button">English</button>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 data-i18n="hero_title">اكتشف ما ينقصك للوصول إلى وظيفة أحلامك</h1>
+      <p data-i18n="hero_text">ارفع سيرتك الذاتية، واختر الوظيفة التي تستهدفها، واحصل على تقرير واضح بالمهارات الناقصة وخطة للتعلّم.</p>
+      <a href="#analyze" class="btn btn-primary" data-i18n="hero_cta">ابدأ التحليل</a>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section">
+      <h2 data-i18n="how_title">كيف يعمل؟</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">📄</div>
+          <h3 data-i18n="step1_title">ارفع سيرتك الذاتية</h3>
+          <p data-i18n="step1_text">PDF أو Word أو TXT</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🎯</div>
+          <h3 data-i18n="step2_title">اختر الوظيفة</h3>
+          <p data-i18n="step2_text">الوظيفة التي تطمح إليها</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🗺️</div>
+          <h3 data-i18n="step3_title">احصل على خطتك</h3>
+          <p data-i18n="step3_text">المهارات الناقصة وكيفية تعلّمها</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🤖</div>
+          <h3 data-i18n="step4_title">استخدم المساعد الذكي</h3>
+          <p data-i18n="step4_text">اسأل عن الدورات والشهادات المناسبة لك</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analyze form -->
+    <section id="analyze" class="section">
+      <h2 data-i18n="analyze_title">حلّل سيرتك الذاتية</h2>
+      <form id="analyze-form" class="card">
+        <label for="cv-file" class="dropzone">
+          <span class="dropzone-icon">⬆️</span>
+          <span id="file-label" data-i18n="dropzone_text">اسحب سيرتك الذاتية إلى هنا أو اضغط لاختيار ملف</span>
+          <input type="file" id="cv-file" accept=".pdf,.docx,.txt" hidden>
+        </label>
+        <div class="cv-rules">
+          <p class="cv-rules-title" data-i18n="rules_title">شروط رفع السيرة الذاتية</p>
+          <ul>
+            <li data-i18n="rule_language">اللغة: الإنجليزية فقط.</li>
+            <li data-i18n="rule_format">صيغة الملف: PDF أو DOCX أو TXT.</li>
+            <li data-i18n="rule_size">الحجم الأقصى: 10 ميجابايت.</li>
+            <li data-i18n="rule_text">يجب أن يحتوي الملف على نص قابل للتحديد (الملفات الممسوحة ضوئيًا كصور غير مدعومة).</li>
+          </ul>
+        </div>
+
+        <label for="role-select" class="field-label" data-i18n="role_label">الوظيفة المستهدفة</label>
+        <select id="role-select" required></select>
+
+        <button type="submit" class="btn btn-primary" data-i18n="analyze_button">حلّل سيرتي الذاتية</button>
+        <p id="analyze-status" class="status" role="status"></p>
+      </form>
+    </section>
+
+    <!-- Results (hidden until analysis is done) -->
+    <section id="results" class="section" hidden>
+      <h2 data-i18n="results_title">النتيجة</h2>
+      <div id="results-content"></div>
+    </section>
+
+    <!-- Knowledge assistant -->
+    <section id="assistant" class="section">
+      <h2 data-i18n="assistant_title">اسأل المساعد</h2>
+      <p data-i18n="assistant_text">اسأل عن الدورات أو المهارات أو خطة التعلّم، وسيجيبك المساعد استنادًا إلى مصادر موثوقة.</p>
+      <form id="assistant-form" class="card">
+        <textarea id="question" rows="3" maxlength="4000" required></textarea>
+        <button type="submit" class="btn btn-primary" data-i18n="ask_button">اسأل</button>
+        <p id="assistant-status" class="status" role="status"></p>
+      </form>
+      <div id="answer" class="card" hidden></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer_text">CV Gap — مشروع تحليل فجوات المهارات</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

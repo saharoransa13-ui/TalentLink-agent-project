@@ -1,0 +1,4 @@
+# Install after the core requirements and optional semantic matching dependencies.
+-r requirements.txt
+-r requirements-semantic.txt
+chromadb>=1.0,<2.0

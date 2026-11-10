@@ -1,0 +1,13 @@
+Alex Candidate
+Systems and Network Administrator
+5 years experience in IT infrastructure.
+
+Skills:
+TCP/IP, routing, switching, VLAN, Cisco networking.
+Linux administration, Bash scripting.
+VMware vSphere and virtualization.
+Veeam backup and disaster recovery.
+Python scripting and basic automation.
+
+Certifications:
+CCNA, ITIL.

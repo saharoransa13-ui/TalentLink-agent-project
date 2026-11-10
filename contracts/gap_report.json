@@ -1,0 +1,11 @@
+{
+  "request_id": "uuid",
+  "role_id": "network_engineer",
+  "role_title": "Network Engineer",
+  "match_score": 50.0,
+  "candidate_profile": {},
+  "gaps": [],
+  "recommendations": [],
+  "roadmap": [],
+  "warnings": []
+}

@@ -1,0 +1,16 @@
+{
+  "candidate_name": null,
+  "skills": [
+    {
+      "skill_id": "python",
+      "name": "Python",
+      "level": "intermediate",
+      "evidence": [
+        "Python"
+      ]
+    }
+  ],
+  "certifications": [],
+  "years_experience": null,
+  "source_filename": "cv.pdf"
+}
